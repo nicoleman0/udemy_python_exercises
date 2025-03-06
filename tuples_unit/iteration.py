@@ -1,9 +1,3 @@
-locations = {
-	(35.324, 23.239): "Tokyo Office",
-	(87.123, 24.593): "Helsinki Office",
-	(58.304, 90.234): "New York Office"
-}
-
 months = (
 	"January",
 	"February",
@@ -27,4 +21,11 @@ for month in months:
 i = len(months) - 1
 while(i >= 0):
     print(months[i])
-    i -= 1
+    i -= 1 # decrement by i, going backwards
+
+# tuple methods (count, index)
+
+x = (1, 2, 2, 2, 3, 4, 5)
+x.count(2) # 3
+x.index(2) # 1
+x.index(1) # 0
