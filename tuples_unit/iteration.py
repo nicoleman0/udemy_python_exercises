@@ -32,3 +32,4 @@ x.index(1) # 0
 
 nums = (1, 2, 3, (4, 5), 6, 7)
 nums[3][0] # 4
+nums[0:] # can also use slicing
