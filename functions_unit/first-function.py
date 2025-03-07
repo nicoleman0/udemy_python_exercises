@@ -1,7 +1,7 @@
-def happy_bday():
+def happy_bday(name):
     print("Happy birthday to you!")
     print("Happy birthday to you!")
-    print("Happy birthday, dear You!")
+    print(f"Happy birthday, dear {name}!")
     print("Happy birthday to you!")
 
-happy_bday()
+print(happy_bday("Nick"))
