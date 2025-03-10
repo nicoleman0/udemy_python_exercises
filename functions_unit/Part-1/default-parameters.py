@@ -3,6 +3,7 @@
 
 # Example
 def exponent(num, power=2): # power is optional and defaults to 2
+    """Raise num to the power of power. It is 2 by default."""
     return num ** power
 
 print(exponent(9))  # 81
