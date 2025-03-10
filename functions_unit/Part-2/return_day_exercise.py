@@ -1,3 +1,5 @@
+# 1
+
 def return_day(num):
     days = ["Sunday", "Monday", "Tuesday", "Wednesday", 
     "Thursday", "Friday", "Saturday"]
@@ -10,3 +12,17 @@ def user_day_input():
     return print(return_day(day))
 
 user_day_input()
+
+# 2
+
+'''
+last_element([1,2,3]) # 3
+last_element([]) # None
+'''
+
+def last_element(list):
+    if list: 
+        return list[-1]
+    return None
+
+print(last_element([1,2,3])) # 3
