@@ -1,7 +1,7 @@
 # practice with *args
-def sum_of_nums(*args): # can be anything, but *args is a common convention
+def sum_of_nums(*nums): # can be anything, but *args is a common convention
    total = 0
-   for num in args:
+   for num in nums:
       total += num
    return total
 
