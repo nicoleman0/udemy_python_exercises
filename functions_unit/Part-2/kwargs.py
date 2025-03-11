@@ -4,3 +4,12 @@ def fav_sports(**kwargs):
         print(f"{person}'s favorite sport is {sport}")
 
 fav_sports(Nick="Hockey", John="Football", Angela="Basketball")
+
+def secret_greeting(**kwargs):
+    if "Nick" in kwargs and kwargs["Nick"] == "open sesame":
+        print("You may enter!")
+    elif "Nick" in kwargs:
+        print(f"Wrong password.")
+    return "You're not Nick."
+
+secret_greeting(Nick="open sesame")
