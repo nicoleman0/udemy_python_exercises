@@ -23,3 +23,6 @@ def calculate(**kwargs):
         return message + ' ' + str(result)
     else:
         return 'The result is ' + str(result)
+    
+if __name__ == "__main__":
+    print(calculate(make_float=False, operation='add', message='You just added', first=2, second=4)) # "You just added 6"

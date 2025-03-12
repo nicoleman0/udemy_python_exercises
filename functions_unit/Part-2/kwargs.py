@@ -12,4 +12,5 @@ def secret_greeting(**kwargs):
         print(f"Wrong password.")
     return "You're not Nick."
 
-secret_greeting(Nick="open sesame")
+if __name__ == "__main__":
+    secret_greeting(Nick="open sesame")
