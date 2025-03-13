@@ -4,7 +4,7 @@ nums = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 doubles = list(map(lambda x: x * 2, nums))
 
 people = ['John', 'Mike', 'Sarah', 'Sally']
-upper = list(map(lambda name: name.upper(), people))
+upper = list(map(lambda name: name.upper(), people)) # ['JOHN', 'MIKE', 'SARAH', 'SALLY']
 
 if __name__ == '__main__':
     print(doubles)

@@ -24,3 +24,10 @@ nums2 = [4, 5, 6]
 words = ['one', 'two', 'three']
 z2 = zip(nums1, nums2, words)
 list(z2) # [(1, 4, 'one'), (2, 5, 'two'), (3, 6, 'three')]
+
+# example - combine two lists into a list of tuples and then unzip the result
+five_by_two = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]
+
+five_by_two_unzipped = list(zip(*five_by_two))
+
+five_by_two_unzipped # [(0, 1, 2, 3, 4), (1, 2, 3, 4, 5)]
