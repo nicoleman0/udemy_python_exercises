@@ -11,6 +11,7 @@ if __name__ == '__main__':
 # return list of numbers divisible by 4, multipled by 3
 
 def triple_and_filter(numlist):
+   """return list of numbers divisible by 4, multipled by 3"""
    return list(
        filter(
            lambda x: x % 4 == 0, map(lambda x: x * 3, numlist)
