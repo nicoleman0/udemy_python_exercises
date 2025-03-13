@@ -4,7 +4,8 @@ len('hi')
 
 'hi'.__len__() # this is how len works behind the scenes
 
-# example of using .__len__()
+# example of using .__len__() / dunder method
+# this is how you can override the len function
 
 class SpecialList:
     def __init__(self, data):
