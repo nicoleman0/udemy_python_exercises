@@ -1,3 +1,6 @@
+# zip - combine two lists into a dictionary
+# zip(list1, list2)
+
 students = ['Dan', 'Ann', 'Joe', 'Ben', 'Jen']
 midterms = (90, 69, 87, 72, 95)
 finals = (98, 74, 78, 88, 90)
