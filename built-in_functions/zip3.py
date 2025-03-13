@@ -8,6 +8,8 @@ if __name__ == '__main__':
 
 # Triple and filter
 
+# return list of numbers divisible by 4, multipled by 3
+
 def triple_and_filter(numlist):
    return list(
        filter(
