@@ -9,4 +9,8 @@ if __name__ == '__main__':
 # Triple and filter
 
 def triple_and_filter(numlist):
-    [num * 3 for num in numlist if num % 4 == 0]
+   return list(
+       filter(
+           lambda x: x % 4 == 0, map(lambda x: x * 3, numlist)
+           )
+       )
