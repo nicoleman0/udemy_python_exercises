@@ -16,7 +16,7 @@ get(d, "city") # None
 while True:
     try:
         num = int(input("Please enter a number: "))
-    except:
+    except ValueError:
         print("That's not a number!")
     else:
         print("Nice, you entered a number.")
