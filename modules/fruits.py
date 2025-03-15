@@ -1,9 +1,10 @@
-import bananas
+from bananas import dip_in_chocolate as dip, peel
 import apples
 
-print(bananas.peel())
+print(peel())
+print(dip())
 
 print(apples.offer())
 print(apples.bake())
 
-print(bananas.dip_in_chocolate())
+
