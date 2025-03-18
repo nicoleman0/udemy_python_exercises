@@ -18,12 +18,15 @@ class User:
         self.age = age
         User.active_users += 1
 
+    def __repr__(self):  # string representation
+        return f"{self.first} is {self.age} years old."
+
     def logout(self):
         User.active_users -= 1
         return f"{self.first} has logged out."
 
     def full_name(self):    # instance method
-        return f"{self.first} {self.last}"
+        return f"{self.first} {self.last} is this user's full name."
 
     def initials(self):
         return f"{self.first[0]}.{self.last[0]}."
@@ -39,11 +42,6 @@ class User:
         print(f"Happy {self.age}th birthday, {self.first}.")
 
 
-user1 = User("Nick", "Coleman", 24)
-user2 = User("Bob", "Builder", 50)
-user3 = User("Maria", "Lopez", 39)
-
-user4 = User.from_string("Brian, Coleman, 56")
-
-print(user4.birthday())
-print(User.active_users)
+n = User("Nick", "Coleman", 24)
+print(n)    # calls __repr__
+print(n.full_name())
