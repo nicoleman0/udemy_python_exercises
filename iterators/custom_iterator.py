@@ -13,6 +13,29 @@ class Counter:
             return num
         raise StopIteration
 
+# Using a generator instead
 
-for x in Counter(0, 10):
-    print(x)
+
+def count_up_to(high):
+    count = 0
+    while count < high:
+        yield count  # yield retains previous state unlike basic functions
+        count += 1
+
+
+# week exercise
+
+def week():
+    days = ["Monday", "Tuesday", "Wednesday",
+            "Thursday", "Friday", "Saturday", "Sunday"]
+    for day in days:
+        yield day
+
+# yes or no exercise
+
+
+def yes_or_no():
+    answer = "yes"
+    while True:
+        yield answer
+        answer = "no" if answer == "yes" else "yes"
