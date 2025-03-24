@@ -2,10 +2,10 @@ from functools import wraps
 
 
 def ensure_first_arg_is(val):
-    def inner(fn):
+    def inner(fn):  # this accepts the function argument
         @wraps(fn)
         def wrapper(*args, **kwargs):
-            if args and args[0] != val:
+            if args and args[0] != val:  # checking if the first arg is not equal to val
                 return f"First arg needs to be {val}"
             return fn(*args, **kwargs)
         return wrapper
