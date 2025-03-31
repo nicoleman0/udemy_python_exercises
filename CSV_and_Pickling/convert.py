@@ -5,11 +5,11 @@ def cm_to_in(cm):
     return float(cm) * 0.393701
 
 
-with open("fighters.csv") as file:
+with open("CSV_and_Pickling/fighters.csv") as file:
     csv_reader = DictReader(file)
     fighters = list(csv_reader)
 
-with open("inches_fighters.csv", "w") as file:
+with open("CSV_and_Pickling/inches_fighters.csv", "w") as file:
     headers = ("Name", "Country", "Height")
     csv_writer = DictWriter(file, fieldnames=headers)
     csv_writer.writeheader()
