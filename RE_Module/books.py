@@ -15,9 +15,10 @@ fixed_titles = []
 
 pattern = re.compile(r'(?P<title>^[\w ]+) \((?P<date>\d{4})\)')
 for book in titles:
-    # result = pattern.sub("\g<2> - \g<1>", book)
+    # result = pattern.sub("\g<2> - \g<1>", book) -> also works
     result = pattern.sub("\g<date> - \g<title>", book)
 
     fixed_titles.append(result)
+
 fixed_titles.sort()
 print(fixed_titles)
