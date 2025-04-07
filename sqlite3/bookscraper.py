@@ -30,7 +30,7 @@ def get_title(book):
 
 def get_price(book):
     price = book.select('.price_color')[0].get_text()
-    float(price.replace('£', '').replace('Â', ''))
+    price = float(price.replace('£', '').replace('Â', ''))
     return price
 
 
@@ -49,7 +49,5 @@ def get_rating(book):
     return ratings[word]
 
 
-book_list = scrape_books(
+scrape_books(
     'https://books.toscrape.com/catalogue/category/books/history_32/index.html')
-
-print(book_list)

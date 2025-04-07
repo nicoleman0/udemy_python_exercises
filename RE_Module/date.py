@@ -1,7 +1,7 @@
 import re
 
 
-def parse_date(date: str):
+def parse_date(date: str) -> dict:
     date_regex = re.compile(
         r'^(?P<day>\b\d{2})[/.,](?P<month>\d{2})[/.,](?P<year>\d{4}\b)$')
     match = date_regex.search(date)
